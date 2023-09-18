@@ -1,0 +1,27 @@
+h1, p{
+  margin: 0;
+  padding: 0;
+}
+
+.badge{
+  display: inline-block;
+  padding-block: 5px;
+  padding-inline: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.atcoder{
+  font-size: 20px;
+}
+
+.name{
+  font-size: 10px;
+}
+
+.rate{
+  font-size: 30px;
+  font-weight: 700;
+}
+
