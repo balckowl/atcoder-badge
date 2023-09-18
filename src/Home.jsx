@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
         // サーバーサイドのエンドポイントからデータを取得するコード
-        fetch(`https://atcoder-badge.vercel.app/atcoder-data?name=${name}`)
+        fetch(`http://localhost:3000/atcoder-data?name=${name}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
