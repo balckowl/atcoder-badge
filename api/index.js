@@ -5,6 +5,7 @@ import fetch from 'node-fetch';
 const app = express();
 
 app.use(cors());
+app.use(express.static("./public"));
 
 app.get('/atcoder-data', async (req, res) => {
     try {
@@ -33,3 +34,5 @@ app.get('/atcoder-data', async (req, res) => {
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+
+module.exports = app;
