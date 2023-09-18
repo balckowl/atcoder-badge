@@ -10,7 +10,7 @@ app.use(express.static("./public"));
 app.get('/atcoder-data', async (req, res) => {
     try {
         // クライアントからのリクエストを待つために非同期処理を使用
-        await new Promise((resolve) => setTimeout(resolve, 2000)); // 1秒待機 (必要に応じて調整)
+        await new Promise((resolve) => setTimeout(resolve, 6000)); // 1秒待機 (必要に応じて調整)
 
         const name = req.query.name; // クエリパラメータ name を取得
 
